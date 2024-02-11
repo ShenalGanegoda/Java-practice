@@ -8,15 +8,15 @@ public class BubbleSortExercise {
 
 
     public static int[] bubbleSort(int[] myArray){ //Bubble sort approach.
-        int tempPosition = 0;
-        for (int i = 1; i < myArray.length; i++) { // {6 , 4 , 7 , 1 , 10 , 5};
-            if (myArray[i - 1] > myArray[i]) {
-                // Swap the Two elements
-                tempPosition = myArray[i - 1];
-                myArray[i - 1] = myArray[i];
-                myArray[i] = tempPosition;
+        int tempPosition = 0; // Integer value for swapping - temporary position hold.
+            for (int i = 1; i < myArray.length; i++) { // {6 , 4 , 7 , 1 , 10 , 5};
+                if (myArray[i - 1] > myArray[i]) { // If the first value is greater than the next
+                    // Swap the Two elements
+                    tempPosition = myArray[i - 1];
+                    myArray[i - 1] = myArray[i];
+                    myArray[i] = tempPosition;
+                }
             }
-        }
         return myArray;
     }
 }
