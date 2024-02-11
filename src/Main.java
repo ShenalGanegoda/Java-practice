@@ -1,9 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int[] array = { 6 , 4 , 7 , 1 , 10 , 5 };
-        for (int num : BubbleSortExercise.bubbleSort(array)){
-            System.out.print(num + " ");
-        }
+
     }
 
 

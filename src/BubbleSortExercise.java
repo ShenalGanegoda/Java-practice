@@ -6,6 +6,15 @@ public class BubbleSortExercise {
     // Checks if the first element is greater than the other
     // If yes, SWAP!
 
+    /*
+    Run on the main method:
+
+    int[] array = { 6 , 4 , 7 , 1 , 10 , 5 };
+        for (int num : BubbleSortExercise.bubbleSort(array)){
+        System.out.print(num + " ");
+    }
+
+     */
 
     public static int[] bubbleSort(int[] myArray){ //Bubble sort approach.
         int tempPosition = 0; // Integer value for swapping - temporary position hold.
