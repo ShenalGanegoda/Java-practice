@@ -1,5 +1,11 @@
 public class Main {
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        int[] array = { 6 , 4 , 7 , 1 , 10 , 5 };
+
+        for (int num : BubbleSortExercise.bubbleSort(array)){
+            System.out.print(num + " ");
+        }
+    }
 
 
     public static int randomNumberPick(){
@@ -12,10 +18,6 @@ public class Main {
         // Finding duplicates using only one for loop exercise.
         int duplicate = 0;
         return duplicate;
-    }
-    public static int[] bubbleSort(int[] myArray){ //Bubble sort approach.
-        int[] sortedArray = new int[myArray.length];
-        return sortedArray;
     }
 
     public static int[] selectionSort(int[] myArray){ //Selection sort approach.
