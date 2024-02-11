@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+    }
+
+    public static int[] bubbleSort(int[] myArray){
+        int[] sortedArray = new int[myArray.length];
+        return sortedArray;
     }
 }
