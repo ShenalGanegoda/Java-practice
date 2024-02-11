@@ -25,4 +25,6 @@ public class MultiDimensionalArrayPractice {
         }
 
     }
+
+    public static void rowsAndColumnsSum2DArray(){}
 }
