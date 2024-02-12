@@ -16,7 +16,7 @@ public class MultiDimensionalArrayPractice {
 
      */
 
-    public static void multiDimesionalArrayPrint(int[][] my2DArray){
+    public static void multiDimesionalArrayPrint(int[][] my2DArray) {
         for (int i = 0; i < my2DArray.length; i++) {
             System.out.println();
             for (int j = 0; j < my2DArray[i].length; j++) {
@@ -26,5 +26,7 @@ public class MultiDimensionalArrayPractice {
 
     }
 
-    public static void rowsAndColumnsSum2DArray(){}
+    public static void rowsAndColumnsSum2DArray() {
+    }
+    // Calculate the sum of the Rows and the Columns values separately.
 }
