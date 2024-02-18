@@ -1,5 +1,15 @@
 public class DuplicateFindWithOneForLoop {
 
+      /*
+    Run on the main method:
+
+        int[] array = {12 , 23 , 5 , 75 , 12 , 7};
+        DuplicateFindWithOneForLoop duplicate = new DuplicateFindWithOneForLoop();
+        System.out.println("Duplicate of the Array: " + duplicate.duplicateWithOneLoop(array));
+    }
+
+     */
+
     public static int duplicateWithOneLoop(int[] array){
         // Finding duplicates using only one for loop exercise.
 
