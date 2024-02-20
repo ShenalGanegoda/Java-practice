@@ -1,9 +1,12 @@
 public class MergeSortExercise {
 
     public static void mergeSort(){
+
         int[] myArray = { 2 , 45  , 5 , 1 , 56 , 6 , 21 , 7 , 6};
         int midPoint = myArray.length / 2;
-        
+
+        if (myArray.length <= 1) return;
+
         int[] leftArray = new int[midPoint];
         int[] rightArray = new int[myArray.length - midPoint];
 
