@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(firstOccurrenceIndex("sadbutsad" , "sad"));
+        System.out.println(firstOccurrenceIndex("butsad" , "sad"));
     }
 
 
@@ -21,14 +21,14 @@ public class Main {
     */
 
     public static int firstOccurrenceIndex(String haystack , String needle){ // Haystack - sadbutsad / Needle - sad
-        int needleLength = needle.length(); // Storing the needle length in a variable.
-
+        int firstOccurenceIndex = 0; //Variable to hold the index.
         for (int i = 2; i < haystack.length(); i++) {
-            if (needle == "" + haystack.charAt(i - 2) + haystack.charAt(i - 1) + haystack.charAt(i + 1)){
-                return haystack.charAt(i);
-            }
+            if (needle.equals(""+ haystack.charAt(i - 2) + haystack.charAt(i - 1) + haystack.charAt(i))){
+                firstOccurenceIndex = (i - 2);
+                break;
+            } else firstOccurenceIndex = -1;
         }
-        return -1;
+        return firstOccurenceIndex;
     }
 
 }
