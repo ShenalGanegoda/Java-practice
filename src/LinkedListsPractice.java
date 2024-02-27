@@ -1,6 +1,15 @@
 import java.util.LinkedList;
 
 public class LinkedListsPractice {
+
+    /*
+    Run on the main method:
+
+        LinkedListsPractice addingCheck = new LinkedListsPractice();
+        addingCheck.addElementsToLinkedList();
+    }
+
+     */
     public LinkedList<String> mylinkedLists = new LinkedList<String>();
 
     public void addElementsToLinkedList(){
