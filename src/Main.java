@@ -29,13 +29,20 @@ public class Main {
 
     */
     public static String stringCompression(String str){ //"aabcccccaaa"
-        String newString = "";
+        int count = 0; //Integer variable to hold the count of each letter.
+        String newString = ""; //String variable holding the new String.
+
         for (int i = 1; i < str.length(); i++) {
-            if (str.charAt(i) != str.charAt(i + 1)) {
-                newString = str.charAt(i) + Integer.toString(i);
+            count++; //Increasing the variable to check the letter count.
+            if (str.charAt(i - 1) != str.charAt(i)) { //Checking for the letter change.
+                newString += str.charAt(i - 1) + Integer.toString(count);
+                //Creation of the new string with the letter and the count.
+                count = 0;
             }
-        } return newString;
+        }
+        return newString; // Returning the new string.
     }
+
     public static int firstOccurrenceIndex(String haystack , String needle){ // Haystack - sadbutsad / Needle - sad
 
             /*
