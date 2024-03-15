@@ -6,8 +6,6 @@ public class Main {
         System.out.println(stringCompression(str));
     }
 
-
-
     public static int[] mergeSort(int[] myArray){ //Merge sort approach.
         int[] sortedArray = new int[myArray.length];
         return sortedArray;
@@ -34,7 +32,11 @@ public class Main {
 
         for (int i = 1; i < str.length(); i++) {
             count++; //Increasing the variable to check the letter count.
-            if (str.charAt(i - 1) != str.charAt(i)) { //Checking for the letter change.
+            if (str.charAt(i - 1) != str.charAt(i)) { //Checking for the letter change
+                if (i ==  str.length() -1){
+                    newString += str.charAt(i - 1) + Integer.toString(count) + 1;
+                    // Condition for the last character section.
+                }
                 newString += str.charAt(i - 1) + Integer.toString(count);
                 //Creation of the new string with the letter and the count.
                 count = 0;
