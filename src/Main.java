@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
         int[] nums = {3 , 0 , 1};
-        missingNumber(nums);
+        System.out.println(missingNumber(nums));
     }
 
     public static int[] mergeSort(int[] myArray){ //Merge sort approach.
@@ -35,13 +36,19 @@ public class Main {
 
      */
 
-    public static void missingNumber(int[] nums){ // [3,0,1]
+    public static int missingNumber(int[] nums){ // [3,0,1]
         int arrayLength = nums.length;
-        int[] newArray = new int[nums.length];
+        int missingNumber = 0;
+        int arrayElements = 0;
+        int newArrayElements = 0;
 
         for (int i = 0; i < arrayLength; i++) {
-            newArray[i] = i + 1; //Creating new array with the length of the array.
+            arrayElements += nums[i];
+            newArrayElements += i + 1;
         }
+
+        missingNumber = newArrayElements - arrayElements;
+        return missingNumber;
     }
 
     /*
@@ -95,5 +102,6 @@ public class Main {
         }
         return firstOccurenceIndex;
     }
+
 
 }
