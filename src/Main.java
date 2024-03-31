@@ -37,17 +37,18 @@ public class Main {
      */
 
     public static int missingNumber(int[] nums){ // [3,0,1]
-        int arrayLength = nums.length;
-        int missingNumber = 0;
-        int arrayElements = 0;
-        int newArrayElements = 0;
+        int arrayLength = nums.length; // Variable to hold array length.
+        int missingNumber = 0; // Variable to hold the missing number.
+        int arrayElements = 0; // Integer value to hold the sum of the elements.
+        int newArrayElements = 0; // Integer value to hold the sum of the array length.
 
         for (int i = 0; i < arrayLength; i++) {
+            // Calculating the sums
             arrayElements += nums[i];
             newArrayElements += i + 1;
         }
 
-        missingNumber = newArrayElements - arrayElements;
+        missingNumber = newArrayElements - arrayElements; // Subtraction to get the missing value.
         return missingNumber;
     }
 
